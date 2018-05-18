@@ -32,8 +32,8 @@ const action = addExpense(expenseData);
 expect(action).toEqual({
     type :'ADD_EXPENSE',
     expense : {
-        ...expenseData,
-        id : expect.any(String)
+        ...expenseData
+        // id : expect.any(String)
     }
 })
 });
@@ -46,7 +46,7 @@ test('should setup add expense action object with default values',()=>{
             note: '',
             amount : 0,
             createdAt:0,
-            id : expect.any(String)
+            // id : expect.any(String)
         }
     })
 });
